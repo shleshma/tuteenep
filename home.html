@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuteeNep - Home</title>
+  <link rel="icon" type="image/svg+xml" href="img/tnlogo.svg">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href="home.html"><img src="img/tnlogo.svg" alt="TuteeNep Logo"></a>
+  </div>
+  <!-- Menu Icon -->
+  <div class="menu-container">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <img src="img/menu.webp" alt="Menu">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="find_tutor.html">Find Tutors</a></li>
+        <li><a href="becomeTutor.html">Become a Tutor</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main>
+  <div class="slogan">
+  <img src="img/slogan.png" alt="TuteeNep Slogan">
+  <div class="overlay-text">
+    <h1>Welcome to TuteeNep</h1>
+    <p>Spark, Learn, Thrive!</p>
+  </div>
+</div>
+
+  <section class="benefits">
+      <div class="container">
+        <h2>Why TuteeNep?</h2>
+        <div class="image-row">
+          <div class="image-container">
+            <img src="img/convenient.png" alt="Convenient">
+            <h3>Convenient Learning Experience</h3>
+            <p>With our user-friendly platform, you can access quality education support whenever and wherever you need it.</p>
+          </div>
+          <div class="image-container">
+            <img src="img/personalize.png" alt="Personalized Tutoring">
+            <h3>Personalized Tutoring</h3>
+            <p>As every student is unique, we offer personalized tutoring tailored to your individual needs to reach your full potential.</p>
+          </div>
+          <div class="image-container">
+            <img src="img/edu.png" alt="Quality Education Support">
+            <h3>Quality Education Support</h3>
+            <p>Whether you need help with homework, exam preparation, or understanding complex concepts, we're here to offer guidance and assistance.</p>
+          </div>
+          <div class="image-container">
+            <img src="img/money.png" alt="Fair Rates, Fair Pay">
+            <h3>Fair Rates, Fair Pay</h3>
+            <p>Tutors are paid fairly, and students are charged reasonably, ensuring an equitable learning experience for all.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="get-started-section">
+  <div class="get-started-content">
+    <h2>Struggling in Your Classes?</h2>
+    <p>Don't worry, we're here to help! Get personalized tutoring sessions with our competitive tutors tailored to your needs.</p>
+    <a href="student_login.html" class="cta-button">Find a Tutor</a>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="copyright">
+      <p>Copyright © TuteeNep 2024</p>
+    </div>
+    <div class="query">
+     <p>Learn more <a href="about.html">About Us</a>.</p>
+    </div>
+  </footer>
+
+<script type="text/javascript">
+ function toggleMenu() {
+  var menuIcon = document.querySelector('.menu-icon');
+  menuIcon.classList.toggle('clicked');
+}
+</script>
+</body>
+</html>
