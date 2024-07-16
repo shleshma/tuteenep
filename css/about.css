@@ -1,0 +1,320 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header styles */
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: steelblue;
+}
+
+main {
+  padding: 20px;
+}
+
+.about-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: steelblue;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Mission Section */
+.mission-section,
+.basic-functionality-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission-content,
+.basic-functionality-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission-content h2,
+.basic-functionality-content h2 {
+  font-size: 36px;
+  color: steelblue;
+  margin-bottom: 30px;
+}
+
+.mission-content p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.basic-functionality-content li {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Core Values Section */
+.core-values-section {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+
+.core-values {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.core-values h2 {
+  font-size: 36px;
+  color: steelblue;
+  margin-bottom: 50px;
+}
+
+.core-values-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.core-value {
+  flex: 1 1 300px;
+  margin: 0 20px 40px;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.core-value:hover {
+  transform: translateY(-8px);
+}
+
+.core-value img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.core-value-text h3 {
+  font-size: 24px;
+  color: steelblue;
+  margin-bottom: 20px;
+}
+
+.core-value-text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Get Started Section */
+.get-started-section {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.get-started-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.get-started-content h2 {
+  font-size: 36px;
+  color: steelblue;
+  margin-bottom: 30px;
+}
+
+.get-started-content p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.get-started-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: steelblue;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #357dbf;
+}
+
+.footer {
+  background-color: steelblue;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .query,
+.footer .copyright {
+  margin: 10px 0;
+}
+
+.footer p,
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: lighter;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+
+  /* Show menu icon for mobile screens */
+  .menu-icon {
+    display: block;
+    cursor: pointer; /* Add cursor pointer for better user experience */
+  }
+
+  .menu-icon img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Position the navigation menu below the menu icon */
+  nav ul {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Position below the menu icon */
+    right: 0;
+    width: 200px; /* Adjust width as needed */
+    background-color: #ffffff; /* Background color of the menu */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a better visual */
+    padding: 10px; /* Add padding for better spacing */
+    z-index: 999; /* Ensure menu appears above other elements */
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 2; /* Increase line height for better spacing */
+    transition: transform 0.3s ease-in-out; /* Add transition effect for smoother animation */
+  }
+
+  /* Show navigation menu when menu icon is clicked */
+  .menu-icon.clicked + nav ul {
+    display: block;
+    transform: translateX(0); /* Slide the menu in from the right */
+  }
+
+  /* Style for navigation menu items */
+  nav ul li {
+    display: block; /* Display each item on a separate line */
+    margin-bottom: 10px; /* Add bottom margin for spacing between items */
+  }
+
+  nav ul li a {
+    color: #333; /* Change link color for better visibility */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Add transition effect for smoother hover */
+  }
+
+  nav ul li a:hover {
+    color: steelblue; /* Change link color on hover */
+  }
+
+  /* Adjust styles for smaller screens */
+  .about-section h2 {
+    font-size: 36px;
+  }
+
+  .about-section p {
+    font-size: 18px;
+  }
+
+  .about p,
+  .mission-content p,
+  .basic-functionality-content li,
+  .get-started-content p {
+    font-size: 16px;
+  }
+
+  .mission-section h2,
+  .core-values-section h2,
+  .basic-functionality-section h2,
+  .get-started-content h2 {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+}

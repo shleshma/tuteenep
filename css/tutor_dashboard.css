@@ -1,0 +1,188 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 80px;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-icon img {
+  height: 30px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: steelblue;
+}
+
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.dashboard-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.option {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.option a {
+  text-decoration: none;
+  color: #333;
+}
+
+.option img {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.option h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.query a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 500;
+}
+
+.query a:hover {
+  text-decoration: underline;
+}
+
+.query {
+  margin-top: 10px;
+}
+
+.menu-icon {
+  display: none;
+}
+@media only screen and (max-width: 1460px) {
+
+/* Style for the menu icon image */
+.menu-icon img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* Show menu icon for mobile screens */
+  .menu-icon {
+    display: block;
+    cursor: pointer; /* Add cursor pointer for better user experience */
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Position below the menu icon */
+    right: 0;
+    width: 200px; /* Adjust width as needed */
+    background-color: #ffffff; /* Background color of the menu */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a better visual */
+    padding: 10px; /* Add padding for better spacing */
+    z-index: 999; /* Ensure menu appears above other elements */
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 2; /* Increase line height for better spacing */
+    transition: transform 0.3s ease-in-out; /* Add transition effect for smoother animation */
+  }
+
+  /* Show navigation menu when menu icon is clicked */
+  .menu-icon.clicked + nav ul {
+    display: block;
+    transform: translateX(0); /* Slide the menu in from the right */
+  }
+
+  /* Style for navigation menu items */
+  nav ul li {
+    display: block; /* Display each item on a separate line */
+    margin-bottom: 10px; /* Add bottom margin for spacing between items */
+  }
+
+  nav ul li a {
+    color: #333; /* Change link color for better visibility */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Add transition effect for smoother hover */
+  }
+
+  nav ul li a:hover {
+    color: steelblue; /* Change link color on hover */
+  }

@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: steelblue;
+}
+main {
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 70px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: steelblue;
+}
+
+.container p {
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 50px;
+  color: #666;
+}
+
+.container a {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 5px;
+  border: 2px solid steelblue;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: steelblue;
+}
+
+.login-btn,
+.signup-btn {
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: steelblue;
+  color: white;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: steelblue;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .query,
+.footer .copyright {
+  margin: 10px 0;
+}
+
+.footer p{
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  transition: color 0.3s ease;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* Default styles for menu icon */
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1460px) {
+/* Style for the menu icon image */
+.menu-icon img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+
+.overlay-text h1 {
+  display: none;
+}
+
+.overlay-text p {
+  font-size: 16px;
+}
+
+.benefits h2 {
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+  /* Show menu icon for mobile screens */
+  .menu-icon {
+    display: block;
+    cursor: pointer; /* Add cursor pointer for better user experience */
+  }
+
+  /* Position the navigation menu below the menu icon */
+  nav ul {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Position below the menu icon */
+    right: 0;
+    width: 200px; /* Adjust width as needed */
+    background-color: #ffffff; /* Background color of the menu */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a better visual */
+    padding: 10px; /* Add padding for better spacing */
+    z-index: 999; /* Ensure menu appears above other elements */
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 2; /* Increase line height for better spacing */
+    transition: transform 0.3s ease-in-out; /* Add transition effect for smoother animation */
+  }
+
+  /* Show navigation menu when menu icon is clicked */
+  .menu-icon.clicked + nav ul {
+    display: block;
+    transform: translateX(0); /* Slide the menu in from the right */
+  }
+
+  /* Style for navigation menu items */
+  nav ul li {
+    display: block; /* Display each item on a separate line */
+    margin-bottom: 10px; /* Add bottom margin for spacing between items */
+  }
+
+  nav ul li a {
+    color: #333; /* Change link color for better visibility */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Add transition effect for smoother hover */
+  }
+
+  nav ul li a:hover {
+    color: steelblue; /* Change link color on hover */
+  }

@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: steelblue;
+}
+main {
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInSlideUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.slogan {
+  position: relative;
+}
+
+.slogan img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.overlay-text h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  animation: fadeInSlideUp 1s ease-in-out forwards;
+  color: steelblue;
+  letter-spacing: 1px;
+}
+
+.overlay-text p {
+  font-size: 24px;
+  animation: fadeInSlideUp 3s ease-in-out forwards;
+  color: #808080;
+  letter-spacing: 1px;
+}
+
+.benefits {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.benefits h2 {
+  font-size: 48px;
+  margin-top: 90px;
+  color: steelblue;
+}
+
+.image-container h3 {
+  font-size: 24px;
+  color: steelblue;
+}
+
+.image-container p {
+  font-size: 18px;
+  color: #808080;
+  margin: 0 auto; 
+  letter-spacing: 1px;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} 
+
+.image-container {
+  flex: 1 1 250px;
+  margin: 20px 20px 40px;
+  padding: 70px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: translateY(-10px);
+}
+
+.image-container img {
+  max-width: 120px;
+  height: 120px;
+}
+
+/* Get Started Section */
+.get-started-section {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.get-started-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.get-started-content h2 {
+  font-size: 48px;
+  color: steelblue;
+  margin-bottom: 30px;
+}
+
+.get-started-content p {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #4a90e2;
+}
+
+.footer {
+  background-color: steelblue;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .query,
+.footer .copyright {
+  margin: 10px 0;
+}
+
+.footer p{
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  transition: color 0.3s ease;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* Default styles for menu icon */
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1460px) {
+
+.overlay-text h1 {
+  font-size: 32px;
+}
+
+.overlay-text p {
+  font-size: 20px;
+}
+
+/* Style for the menu icon image */
+.menu-icon img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+
+.overlay-text h1 {
+  display: none;
+}
+
+.overlay-text p {
+  font-size: 16px;
+}
+
+.benefits h2 {
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+  /* Show menu icon for mobile screens */
+  .menu-icon {
+    display: block;
+    cursor: pointer; /* Add cursor pointer for better user experience */
+  }
+
+  /* Position the navigation menu below the menu icon */
+  nav ul {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Position below the menu icon */
+    right: 0;
+    width: 200px; /* Adjust width as needed */
+    background-color: #ffffff; /* Background color of the menu */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a better visual */
+    padding: 10px; /* Add padding for better spacing */
+    z-index: 999; /* Ensure menu appears above other elements */
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 2; /* Increase line height for better spacing */
+    transition: transform 0.3s ease-in-out; /* Add transition effect for smoother animation */
+  }
+
+  /* Show navigation menu when menu icon is clicked */
+  .menu-icon.clicked + nav ul {
+    display: block;
+    transform: translateX(0); /* Slide the menu in from the right */
+  }
+
+  /* Style for navigation menu items */
+  nav ul li {
+    display: block; /* Display each item on a separate line */
+    margin-bottom: 10px; /* Add bottom margin for spacing between items */
+  }
+
+  nav ul li a {
+    color: #333; /* Change link color for better visibility */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Add transition effect for smoother hover */
+  }
+
+  nav ul li a:hover {
+    color: steelblue; /* Change link color on hover */
+  }
+
+.get-started-content h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}

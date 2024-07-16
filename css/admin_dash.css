@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* light gray background */
+}
+
+.container {
+  max-width: 1400px; /* increased max-width to 1400px */
+  margin: 40px auto; /* add some margin to the container */
+  padding: 20px;
+  background-color: #fff; /* white background */
+  border: 1px solid #ddd; /* light gray border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add some shadow */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.logout {
+  color: #337ab7;
+  text-decoration: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px; /* add some rounded corners */
+  border: 1px solid #337ab7;
+}
+
+.logout:hover {
+  background-color: #f2f2f2; /* light gray background on hover */
+  color: #23527c; /* darker blue on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2; /* light gray background */
+  font-weight: bold;
+  color: #333;
+}
+
+td {
+  vertical-align: top; /* align content to the top */
+}
+
+a {
+  color: #337ab7; 
+}
+
+a:hover {
+  color: #23527c; 
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form input[type="submit"] {
+  background-color: #337ab7; /* blue background */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 20px; /* add some rounded corners */
+  margin: 10px; /* add some margin around each button */
+  font-size: 12px;
+  font-weight: bold;
+  flex: 1; /* make each button take up equal space */
+}
+
+form input[type="submit"]:hover {
+  background-color: #23527c; /* darker blue on hover */
+}
+
+/* add some space between table rows */
+tbody tr:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+/* make the table responsive */
+@media only screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  th, td {
+    padding: 5px;
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  td:before {
+    content: attr(data-label);
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+/* style the buttons with more space and a different design */
+form button {
+  background-color: #337ab7; /* blue background */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* add some rounded corners */
+  margin: 0 5px; /* add some margin between buttons */
+  font-size: 16px;
+  font-weight: bold;
+  display: block; /* make buttons block-level elements */
+  width: 100%; /* make buttons full-width */
+  margin-bottom: 10px; /* add some margin between buttons */
+}
+
+form button:hover {
+  background-color: #23527c; /* darker blue on hover */
+}
+

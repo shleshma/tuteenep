@@ -1,0 +1,247 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 80px;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-icon img {
+  height: 30px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: steelblue;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fdfdfd; /* Changed background color */
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 110vh;
+  width: 40%;
+  margin: 10px 0;
+}
+
+.sessions-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 40%;
+  margin: 10px 0;
+  max-height: 110vh;
+  overflow-y: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,.form-group select,.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd; /* Changed border color */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 80px;
+}
+
+/* Form Submit Button */
+.form-group button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+  background-color: #23527c; 
+}
+
+.container h2 {
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sessions-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sessions-container li {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.sessions-container li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sessions-container li strong {
+  color: #0056b3;
+  font-size: 1.2em;
+}
+
+.sessions-container li br + strong {
+  margin-top: 10px;
+  display: block;
+}
+
+.sessions-container a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sessions-container a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.query a {
+  text-decoration: none;
+  color: #337ab7;
+  font-weight: 500;
+}
+
+.query a:hover {
+  text-decoration: underline;
+}
+
+.query {
+  margin-top: 10px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1460px) {
+  /* Style for the menu icon image */
+.menu-icon img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Show menu icon for mobile screens */
+.menu-icon {
+    display: block;
+    cursor: pointer; /* Add cursor pointer for better user experience */
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Position below the menu icon */
+    right: 0;
+    width: 200px; /* Adjust width as needed */
+    background-color: #ffffff; /* Background color of the menu */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a better visual */
+    padding: 10px; /* Add padding for better spacing */
+    z-index: 999; /* Ensure menu appears above other elements */
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 2; /* Increase line height for better spacing */
+    transition: transform 0.3s ease-in-out; /* Add transition effect for smoother animation */
+  }
+
+  /* Show navigation menu when menu icon is clicked */
+.menu-icon.clicked + nav ul {
+    display: block;
+    transform: translateX(0); /* Slide the menu in from the right */
+  }
+
+  /* Style for navigation menu items */
+  nav ul li {
+    display: block; /* Display each item on a separate line */
+    margin-bottom: 10px; /* Add bottom margin for spacing between items */
+  }
+
+  nav ul li a {
+    color: #333; /* Change link color for better visibility */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Add transition effect for smoother hover */
+  }
+
+  nav ul li a:hover {
+    color: #666; /* Change link color on hover */
+  }
+}
